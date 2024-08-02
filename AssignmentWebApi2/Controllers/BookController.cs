@@ -15,8 +15,39 @@ namespace AssignmentWebApi2.Controllers
                 _bookServices = bookServices;
             }
 
-            //Get All
-            [HttpGet]
+        /// <summary>
+        /// You can search for Accounts here.
+        /// </summary>
+
+        /// <remarks>
+        /// All the parameters in the request body can be null. 
+        ///
+        ///  You can search by using any of the parameters in the request.
+        ///  
+        ///  NOTE: You can only search by one parameter at a time
+        ///  
+        /// Sample request:
+        ///
+        ///     POST /Account
+        ///     {
+        ///        "userId": null,
+        ///        "bankId": null,
+        ///        "dateCreated": null
+        ///     }
+        ///     OR
+        ///     
+        ///     POST /Account
+        ///     {
+        ///        "userId": null,
+        ///        "bankId": 000,
+        ///        "dateCreated": null
+        ///     } 
+        /// </remarks>
+        /// <param name="request"></param>
+        /// <returns> This endpoint returns a list of Accounts.</returns>
+
+        //Get All
+        [HttpGet]
             public ActionResult<IEnumerable<Book>> GetAllBooks()
             {
                 return Ok(_bookServices.GetAllBooks());
