@@ -7,21 +7,25 @@ namespace AssignmentWebApi2.Services
     {
         private readonly List<Book> _books = new();
 
+        // Get All
         public List<Book> GetAllBooks()
         {
             return _books;
         }
 
+        // GET Book By Id
         public Book GetBookById(int id)
         {
             return _books.FirstOrDefault(b => b.Id == id);
         }
 
+        //Add books
         public void AddBook(Book book)
         {
             _books.Add(book);
         }
 
+        // Update
         public void UpdateBook(int id, Book updatedBook)
         {
             var book = GetBookById(id);
@@ -34,6 +38,7 @@ namespace AssignmentWebApi2.Services
             }
         }
 
+        // Delete
         public void DeleteBook(int id)
         {
             var book = GetBookById(id);

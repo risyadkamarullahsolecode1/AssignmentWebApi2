@@ -15,12 +15,14 @@ namespace AssignmentWebApi2.Controllers
                 _bookServices = bookServices;
             }
 
+            //Get All
             [HttpGet]
             public ActionResult<IEnumerable<Book>> GetAllBooks()
             {
                 return Ok(_bookServices.GetAllBooks());
             }
 
+            //Get By id
             [HttpGet("{id}")]
             public ActionResult<Book> GetBookById(int id)
             {
@@ -32,6 +34,7 @@ namespace AssignmentWebApi2.Controllers
                 return Ok(book);
             }
 
+            //Add
             [HttpPost]
             public ActionResult AddBook([FromBody] Book book)
             {
@@ -43,6 +46,7 @@ namespace AssignmentWebApi2.Controllers
                 return CreatedAtAction(nameof(GetBookById), new { id = book.Id }, book);
             }
 
+            //Update
             [HttpPut("{id}")]
             public ActionResult UpdateBook(int id, [FromBody] Book updatedBook)
             {
@@ -59,6 +63,7 @@ namespace AssignmentWebApi2.Controllers
                 return NoContent();
             }
 
+            //Delete
             [HttpDelete("{id}")]
             public ActionResult DeleteBook(int id)
             {
