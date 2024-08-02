@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssignmentWebApi2", "AssignmentWebApi2\AssignmentWebApi2.csproj", "{DEB1D914-215E-4601-964C-1F83E585C49B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DEB1D914-215E-4601-964C-1F83E585C49B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEB1D914-215E-4601-964C-1F83E585C49B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEB1D914-215E-4601-964C-1F83E585C49B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEB1D914-215E-4601-964C-1F83E585C49B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DFEBC1F9-FFDE-4E26-A8C6-B14F3EFD0A6A}
+	EndGlobalSection
+EndGlobal
